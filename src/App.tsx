@@ -1,4 +1,4 @@
-import { Header } from './Header';
+import { Header } from './header/Header';
 import { MainContent } from './content/MainContent';
 import { Global } from '@emotion/react';
 import React from 'react';
