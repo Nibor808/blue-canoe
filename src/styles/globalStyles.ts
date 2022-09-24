@@ -7,6 +7,7 @@ import montserratReg from './fonts/Montserrat-Regular.ttf';
 export const globalStyles = css`
     :root {
         --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        --shadowLg: 0 100px 300px rgba(0, 0, 0, 0.12), 0 10px 10px rgba(0, 0, 0, 0.24);
         --yellow: #f5f0db;
         --peach: #f49c98;
         --light-green: #b6dedd;
