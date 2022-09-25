@@ -7,7 +7,7 @@ const useStyles = () => ({
     root: css({
         display: 'flex',
         margin: '20px',
-        borderBottom: '1px solid var(--yellow)',
+        borderBottom: '1px solid var(--text-color)',
         justifyContent: 'space-between',
     }),
     brand: css({
@@ -15,7 +15,7 @@ const useStyles = () => ({
         alignItems: 'baseline',
         h1: {
             fontFamily: 'MontReg, sans-serif',
-            color: 'var(--yellow)',
+            color: 'var(--text-color)',
             span: {
                 fontFamily: 'RalewayLI, sans-serif',
                 fontSize: '0.7em',

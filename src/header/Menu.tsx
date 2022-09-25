@@ -14,7 +14,7 @@ const useStyles = () => ({
     item: css({
         marginRight: 30,
         listStyle: 'none',
-        color: 'var(--yellow)',
+        color: 'var(--text-color)',
         fontFamily: 'MontReg, sans-serif',
     }),
 });

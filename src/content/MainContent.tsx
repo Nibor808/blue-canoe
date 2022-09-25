@@ -10,10 +10,9 @@ const useStyles = () => ({
         alignItems: 'center',
     }),
     text: css({
-        marginTop: 50,
+        marginTop: 70,
         fontFamily: 'Nunito, sans-serif',
-        textShadow: 'var(--textShadow)',
-        color: 'var(--yellow)',
+        color: 'var(--text-color)',
     }),
 });
 
@@ -24,7 +23,9 @@ export const MainContent = () => {
         <div className={styles.root}>
             <Us />
             <Canoe />
-            <h2 className={styles.text}>Join us as we explore crown landing camping around the Kawarthas.</h2>
+            <h2 className={styles.text}>
+                Join us as we explore crown landing camping form Algonquin to the Kawarthas.
+            </h2>
         </div>
     );
 };
