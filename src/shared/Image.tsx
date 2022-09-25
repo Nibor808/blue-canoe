@@ -5,10 +5,9 @@ const useStyles = () => ({
     imgDiv: css({
         img: {
             border: '10px solid white',
-            borderRadius: '8px',
             boxShadow: 'var(--shadowLg)',
-            width: '100%',
-            height: '100%',
+            maxWidth: '100%',
+            maxHeight: '100%',
         },
     }),
 });
