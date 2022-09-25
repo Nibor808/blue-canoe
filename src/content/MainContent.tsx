@@ -12,7 +12,7 @@ const useStyles = () => ({
     text: css({
         marginTop: 50,
         fontFamily: 'Nunito, sans-serif',
-        textShadow: 'var(--shadow)',
+        textShadow: 'var(--textShadow)',
         color: 'var(--yellow)',
     }),
 });
