@@ -8,7 +8,7 @@ const useStyles = (bubbleLeft?: boolean, bubbleLeftTop?: boolean) => ({
         marginRight: bubbleLeft ? 20 : 0,
         fontFamily: 'Nunito, sans-serif',
         color: 'black',
-        boxShadow: 'var(--shadow)',
+        boxShadow: 'var(--shadowMed)',
         borderRadius: bubbleLeftTop ? '40px 0 40px 40px' : bubbleLeft ? '40px 40px 0 40px' : '40px 40px 40px 0',
         background: 'white',
         padding: 15,
