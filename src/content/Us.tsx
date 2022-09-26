@@ -38,7 +38,7 @@ export const Us: React.FC = () => {
         <div className={styles.root}>
             <div className={styles.leftContainer}>
                 <div className={styles.textWidth}>
-                    <TextBubble content={["Hi! We're Jess and Robin."]} bubbleLeft />
+                    <TextBubble content={["Hi! We're Jess and Robin..."]} bubbleLeft />
                 </div>
 
                 <div className={styles.textWidth}>
@@ -49,7 +49,7 @@ export const Us: React.FC = () => {
             <Image source={us} alt={'photo of us'} className={styles.usImg} />
 
             <div className={cx(styles.textWidth, styles.topAdjust20)}>
-                <TextBubble content={['And this is Norm.']} />
+                <TextBubble content={['and this is Norm!']} />
             </div>
 
             <div className={styles.norm}>

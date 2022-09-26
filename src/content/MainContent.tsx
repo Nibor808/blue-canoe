@@ -24,7 +24,7 @@ export const MainContent = () => {
             <Us />
             <Canoe />
             <h2 className={styles.text}>
-                Join us as we explore crown landing camping form Algonquin to the Kawarthas.
+                Join us as we explore crown landing camping from Algonquin to the Kawarthas.
             </h2>
         </div>
     );

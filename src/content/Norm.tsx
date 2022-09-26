@@ -25,7 +25,7 @@ export const Norm: React.FC = () => {
         <div className={styles.root}>
             <Image source={norm} alt={'photo of Norm'} className={styles.norm} />
             <div className={styles.text}>
-                <TextBubble content={['Woof!']} />
+                <TextBubble content={['*woof*']} />
             </div>
         </div>
     );
