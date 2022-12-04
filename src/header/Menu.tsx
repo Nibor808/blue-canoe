@@ -17,6 +17,7 @@ const useStyles = () => ({
         listStyle: 'none',
         color: 'var(--text-color)',
         fontFamily: 'MontReg, sans-serif',
+        fontSize: 18,
         '&:after': {
             transition: 'all 0.3s ease-in-out',
             content: "''",
@@ -25,7 +26,7 @@ const useStyles = () => ({
             left: 0,
             bottom: -5,
             right: 0,
-            borderBottom: '2px solid var(--canoe-blue)',
+            borderBottom: '2px solid var(--hover-highlight)',
             opacity: 0,
         },
         '&:hover': {
