@@ -10,20 +10,29 @@ const useStyles = () => ({
         borderBottom: '1px solid var(--text-color)',
         justifyContent: 'space-between',
     }),
-    brand: css({
+    brandDiv: css({
         display: 'flex',
         alignItems: 'baseline',
-        h1: {
-            fontFamily: 'MontReg, sans-serif',
-            color: 'var(--text-color)',
-            span: {
-                fontFamily: 'RalewayLI, sans-serif',
-                fontSize: '0.7em',
-                marginLeft: '15px',
-            },
-        },
+        justifyContent: 'space-between',
+        flexDirection: 'column',
+        margin: '20px 0',
         [viewports.lg]: {
-            flexDirection: 'column',
+            flexDirection: 'row',
+        },
+    }),
+    brand: css({
+        fontFamily: 'MontReg, sans-serif',
+        fontSize: 30,
+        color: 'var(--canoe-blue)',
+        textShadow: 'var(--shadowMed)',
+    }),
+    tagline: css({
+        fontFamily: 'RalewayLI, sans-serif',
+        color: 'var(--off-white)',
+        fontSize: 22,
+        textShadow: 'var(--shadowMed)',
+        [viewports.lg]: {
+            marginLeft: 15,
         },
     }),
 });
@@ -33,10 +42,9 @@ export const Header: React.FC = () => {
 
     return (
         <header className={styles.root}>
-            <div className={styles.brand}>
-                <h1>
-                    The Blue Canoe <span>Adventures in the Kawarthas</span>
-                </h1>
+            <div className={styles.brandDiv}>
+                <span className={styles.brand}>The Blue Canoe</span>
+                <span className={styles.tagline}>Adventures in the Kawarthas</span>
             </div>
 
             <Menu />

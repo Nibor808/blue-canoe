@@ -1,15 +1,22 @@
 import React from 'react';
 import { css } from '@emotion/css';
 import { menuItems } from './menuItems';
+import { viewports } from '../styles/breakpoints';
 
 const useStyles = () => ({
     root: css({
         display: 'flex',
-        alignItems: 'center',
         justifyContent: 'space-between',
+        flexDirection: 'column',
         margin: 0,
         padding: 0,
-        marginTop: 12, // line up with subtitle
+        marginBottom: 20,
+        [viewports.sm]: {
+            alignItems: 'center',
+            flexDirection: 'row',
+            marginTop: 10, // line up with subtitle
+            marginBottom: 0,
+        },
     }),
     item: css({
         position: 'relative',
@@ -26,14 +33,13 @@ const useStyles = () => ({
             left: 0,
             bottom: -5,
             right: 0,
-            borderBottom: '2px solid var(--hover-highlight)',
-            opacity: 0,
+            borderBottom: '2px solid var(--off-white)',
+            width: 0,
         },
         '&:hover': {
             cursor: 'pointer',
-            color: 'var(--text-color-hover)',
             '&:after': {
-                opacity: 1,
+                width: '100%',
             },
         },
         a: {
