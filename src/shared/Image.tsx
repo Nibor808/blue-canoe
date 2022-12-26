@@ -7,6 +7,7 @@ const useStyles = () => ({
         img: {
             maxWidth: '100%',
             maxHeight: '100%',
+            boxShadow: 'var(--shadowSm)',
         },
 
         '&:before': {
@@ -14,7 +15,6 @@ const useStyles = () => ({
             position: 'absolute',
             zIndex: -1,
             background: 'white',
-            boxShadow: 'var(--shadowMed)',
             mask: 'var(--mask)',
             top: -15,
             left: -15,
