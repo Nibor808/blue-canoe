@@ -10,7 +10,7 @@ const useStyles = (bubbleLeft?: boolean, bubbleLeftTop?: boolean) => ({
         color: 'black',
         boxShadow: 'var(--shadowMed)',
         borderRadius: bubbleLeftTop ? '40px 0 40px 40px' : bubbleLeft ? '40px 40px 0 40px' : '40px 40px 40px 0',
-        background: 'white',
+        background: '#ffffff',
         padding: 15,
         p: {
             margin: 0,

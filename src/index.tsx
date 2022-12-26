@@ -5,12 +5,15 @@ import { App } from './App';
 import reportWebVitals from './reportWebVitals';
 import { cache } from '@emotion/css';
 import { CacheProvider as EmotionCacheProvider } from '@emotion/react';
+import { AppContextProvider } from './context/AppContextProvider';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
     <React.StrictMode>
         <EmotionCacheProvider value={cache}>
-            <App />
+            <AppContextProvider>
+                <App />
+            </AppContextProvider>
         </EmotionCacheProvider>
     </React.StrictMode>
 );

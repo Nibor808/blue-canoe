@@ -16,7 +16,7 @@ const useStyles = () => ({
     }),
 });
 
-export const MainContent = () => {
+export const Landing = () => {
     const styles = useStyles();
 
     return (

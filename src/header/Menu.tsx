@@ -2,6 +2,7 @@ import React from 'react';
 import { css } from '@emotion/css';
 import { menuItems } from './menuItems';
 import { viewports } from '../styles/breakpoints';
+import { useAppContext } from '../context/AppContext';
 
 const useStyles = () => ({
     root: css({
@@ -30,9 +31,9 @@ const useStyles = () => ({
             content: "''",
             position: 'absolute',
             top: 0,
-            left: 0,
             bottom: -5,
-            right: 0,
+            left: '50%',
+            right: '50%',
             borderBottom: '2px solid var(--off-white)',
             width: 0,
         },
@@ -40,6 +41,8 @@ const useStyles = () => ({
             cursor: 'pointer',
             '&:after': {
                 width: '100%',
+                left: 0,
+                right: 0,
             },
         },
         a: {
@@ -51,12 +54,13 @@ const useStyles = () => ({
 
 export const Menu: React.FC = () => {
     const styles = useStyles();
+    const { setPage } = useAppContext();
 
     return (
         <ul className={styles.root}>
             {menuItems.map((item) => (
-                <li className={styles.item} key={item.title} aria-label={item.title}>
-                    <a href="#">{item.title}</a>
+                <li className={styles.item} key={item.title} aria-label={item.title} onClick={() => setPage(item.page)}>
+                    {item.title}
                 </li>
             ))}
         </ul>
