@@ -11,8 +11,9 @@ export const globalStyles = css`
         --shadowLg: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
         --text-color: #3b2c2c;
         --off-white: #f5f0db;
-        --canoe-blue: rgba(4, 36, 151, 1);
+        --canoe-blue: rgba(4, 36, 151, 1); /* 042497 */
         --green: rgba(95, 151, 4, 1);
+        --yellow: #ffda00;
     }
 
     @font-face {

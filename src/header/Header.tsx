@@ -6,8 +6,7 @@ import { viewports } from '../styles/breakpoints';
 const useStyles = () => ({
     root: css({
         display: 'flex',
-        margin: '20px',
-        borderBottom: '1px solid var(--text-color)',
+        margin: '40px 20px',
         justifyContent: 'space-between',
     }),
     brandDiv: css({
@@ -15,7 +14,9 @@ const useStyles = () => ({
         alignItems: 'baseline',
         justifyContent: 'space-between',
         flexDirection: 'column',
-        margin: '20px 0',
+        borderBottom: '4px solid var(--yellow)',
+        borderRadius: 4,
+        paddingBottom: 5,
         [viewports.lg]: {
             flexDirection: 'row',
         },
@@ -24,13 +25,11 @@ const useStyles = () => ({
         fontFamily: 'MontReg, sans-serif',
         fontSize: 30,
         color: 'var(--canoe-blue)',
-        textShadow: 'var(--shadowMed)',
     }),
     tagline: css({
         fontFamily: 'RalewayLI, sans-serif',
         color: 'var(--off-white)',
         fontSize: 22,
-        textShadow: 'var(--shadowMed)',
         [viewports.lg]: {
             marginLeft: 15,
         },

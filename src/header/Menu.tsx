@@ -35,6 +35,7 @@ const useStyles = () => ({
             left: '50%',
             right: '50%',
             borderBottom: '2px solid var(--off-white)',
+            borderRadius: 2,
             width: 0,
         },
         '&:hover': {
