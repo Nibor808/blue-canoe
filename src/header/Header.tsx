@@ -6,7 +6,7 @@ import { viewports } from '../styles/breakpoints';
 const useStyles = () => ({
     root: css({
         display: 'flex',
-        margin: '40px 20px',
+        margin: '40px 20px 50px 20px',
         justifyContent: 'space-between',
     }),
     brandDiv: css({

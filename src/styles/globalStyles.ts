@@ -14,6 +14,11 @@ export const globalStyles = css`
         --canoe-blue: rgba(4, 36, 151, 1); /* 042497 */
         --green: rgba(95, 151, 4, 1);
         --yellow: #ffda00;
+        --mask: linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px) no-repeat,
+            conic-gradient(from 135deg at top, #0000, #000 1deg 89deg, #0000 90deg) 0 0 /12px 6px space no-repeat,
+            conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 0 100%/12px 6px space no-repeat,
+            conic-gradient(from 45deg at left, #0000, #000 1deg 89deg, #0000 90deg) 0 0 /6px 12px no-repeat space,
+            conic-gradient(from -135deg at right, #0000, #000 1deg 89deg, #0000 90deg) 100% 0/6px 12px no-repeat space;
     }
 
     @font-face {

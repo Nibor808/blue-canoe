@@ -3,11 +3,24 @@ import { css, cx } from '@emotion/css';
 
 const useStyles = () => ({
     imgDiv: css({
+        position: 'relative',
         img: {
-            border: '10px solid white',
-            boxShadow: 'var(--shadowMed)',
             maxWidth: '100%',
             maxHeight: '100%',
+        },
+
+        '&:before': {
+            content: '""',
+            position: 'absolute',
+            zIndex: -1,
+            background: 'white',
+            boxShadow: 'var(--shadowMed)',
+            mask: 'var(--mask)',
+            top: -15,
+            left: -15,
+            right: -15,
+            bottom: -15,
+            filter: 'blur(0.05em) saturate(0.7) contrast(1.5) brightness(1.2)',
         },
     }),
 });

@@ -11,7 +11,7 @@ const useStyles = () => ({
     }),
     usImg: css({
         transform: 'rotate(15deg)',
-        marginTop: 60,
+        margin: '60px 0',
     }),
     textWidth: css({
         maxWidth: 400,
@@ -19,6 +19,7 @@ const useStyles = () => ({
     norm: css({
         marginTop: 90,
         marginLeft: -50,
+        zIndex: 10,
     }),
     topAdjust20: css({
         marginTop: 20,
@@ -27,7 +28,7 @@ const useStyles = () => ({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        paddingBottom: 20,
+        paddingBottom: 25,
     }),
 });
 
